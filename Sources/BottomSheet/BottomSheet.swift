@@ -100,8 +100,8 @@ public struct BottomSheet<Content: View>: View {
     fileprivate func topBar(geometry: GeometryProxy) -> some View {
         ZStack {
             RoundedRectangle(cornerRadius: 6)
-                .fill(Color.secondary)
-                .frame(width: 40, height: 6)
+                .fill(Color(red: 29.0 / 255.0, green: 29.0/255.0, blue: 31.0/255.0))
+                .frame(width: 72, height: 4)
                 .opacity(showTopIndicator ? 1 : 0)
         }
         .frame(width: geometry.size.width, height: topBarHeight)
